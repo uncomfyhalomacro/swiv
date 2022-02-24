@@ -1,0 +1,15 @@
+[package]
+name = "swiv"
+description = "Sxiv clone for wayland, also works on X11."
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iced = { version="0.3.0", features=["image"] }
+iced_native = "0.4.0"
+
+[[bin]]
+name = "swiv"
+path = "src/swiv.rs"
